@@ -12,7 +12,7 @@ const css_src  = "./assets_dev/css/**/*.css";
 const less_src  = "./assets_dev/less/**/*.less";
 // Dist Paths
 const js_dest      = "./assets/js";
-const js_file_name      = "scripts.min.js";
+const js_file_name      = "main.min.js";
 const css_dest      = "./assets/css";
 const css_file_name      = "style.min.css";
 const less_dest  = "./assets_dev/css";
