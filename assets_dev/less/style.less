@@ -14,6 +14,7 @@
 
 body {
   font-family: 'Poppins', sans-serif;
+  color: @dark-color;
 }
 
 a {
@@ -27,6 +28,61 @@ ul li {
 
 button {
   text-transform: uppercase;
+}
+
+.titulo {
+ 
+  display: inline-block;
+  position: relative;
+  left: 50%; 
+  transform: translateX(-50%);
+
+  h2 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 16px;
+
+  }
+
+  span {
+    color: @detail-color;
+  }
+
+  .sublinhado {
+    position: relative;
+    display: block;
+    content:"";
+    height: 4px;
+    width: 90%;
+    margin: 0 auto;
+    text-align: center;
+    background-color: @detail-color;
+
+    &::after, &::before {
+      content: "";
+      display: inline-block;
+      background-color: @detail-color;
+      width: 18px;
+      height: 18px;
+      position: absolute;
+      border-radius: 50%;
+      z-index: 2;
+      vertical-align: middle;
+      transform: translateY(-50%);
+  
+    }
+
+    &::after {
+      top: 2px;
+      left:0;
+    }
+
+    &::before {
+      top: 2px;
+      right:0;
+    }
+  }
+ 
 }
 
 /**HEADER**/
@@ -173,4 +229,9 @@ button {
       max-width: 260px;
     }
   }
+}
+
+/**TECNOLOGIAS**/
+.tech {
+  padding: 6px 15px;
 }
