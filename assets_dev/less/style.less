@@ -237,14 +237,15 @@ button {
   .tech-used {
     display:grid;
     justify-content: center;
-    margin-top: 16px;
+    margin-top: 24px;
     grid-template-columns: repeat(auto-fit, minmax(200px, max-content));
     gap:20px;
     .tech-item {
       background-color: @dark-color;
       color: @light-color;
       font-family: 'Roboto Slab', serif;
-      display: flex;
+      display: grid;
+      grid-template-columns: 30% 70%;
       align-items: center;
       padding: 10px 12px;
       gap: 20px;
@@ -263,13 +264,17 @@ button {
 
       i {
         font-size: 2.5rem;
-        display: block;
-        padding-left: 6px ;
+        justify-content: center;
       }
-      
+
+      i, p {
+        display: flex;
+        align-items: center;
+      }
+
       p {
         font-weight: 500;
-        padding-left: 45px;
+        padding-left: 12px;
       }
       
     }
