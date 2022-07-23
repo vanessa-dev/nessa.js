@@ -14,6 +14,9 @@ a {
 ul li {
   list-style: none;
 }
+button {
+  text-transform: uppercase;
+}
 /**HEADER**/
 .header {
   background-color: #2740C1;
@@ -67,4 +70,48 @@ ul li {
   .header .header-menu__mobile.header-menu__mobile--active li {
     padding: 5px;
   }
+}
+/**INTRODUÇÃO**/
+.introduction {
+  padding: 6px 15px;
+  color: #121213;
+}
+.introduction .introduction-hello {
+  color: #7e7c7c;
+  padding-bottom: 4px;
+}
+.introduction h2 {
+  font-weight: 600;
+  font-size: 1.3rem;
+  position: relative;
+  display: inline-block;
+}
+.introduction h2::after {
+  display: block;
+  background-color: #AFB7DE;
+  height: 4px;
+  content: "";
+  width: 100%;
+  position: absolute;
+  bottom: 20%;
+  z-index: -1;
+  white-space: nowrap;
+  padding-bottom: 4px;
+}
+.introduction .introduction-job {
+  font-size: 1rem;
+  padding-bottom: 10px;
+}
+.introduction button {
+  background-color: #2740C1;
+  color: #fff;
+  border: none;
+  width: 100%;
+  padding: 10px 16px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.introduction button i {
+  font-size: 1.1rem;
 }

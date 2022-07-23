@@ -3,6 +3,7 @@
 @detail-color: #2C2FB2;
 @dark-color:   #121213;
 @light-color:   #fff;
+@gray-color:   #7e7c7c;
 
 /**RESET**/
 * {
@@ -22,6 +23,10 @@ a {
 
 ul li {
   list-style: none;
+}
+
+button {
+  text-transform: uppercase;
 }
 
 /**HEADER**/
@@ -93,5 +98,56 @@ ul li {
     }
     
    
+  }
+}
+
+/**INTRODUÇÃO**/
+
+.introduction{
+  padding: 6px 15px;
+  color: @dark-color;
+
+  .introduction-hello {
+    color: @gray-color;
+    padding-bottom: 4px;
+  }
+
+  h2 {
+    font-weight: 600;
+    font-size: 1.3rem;
+    position: relative;
+    display: inline-block;
+    &::after {
+      display: block;
+      background-color: @secondary-color;
+      height: 4px;
+      content:"";
+      width:100%;
+      position: absolute;
+      bottom: 20%;
+      z-index: -1;
+      white-space: nowrap;
+      padding-bottom: 4px;
+    }
+  }
+
+  .introduction-job {
+    font-size: 1rem;
+    padding-bottom: 10px;
+  }
+
+  button {
+    background-color: @primary-color;
+    color: @light-color;
+    border: none;
+    width: 100%;
+    padding: 10px 16px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    i {
+      font-size: 1.1rem;
+    }
   }
 }
