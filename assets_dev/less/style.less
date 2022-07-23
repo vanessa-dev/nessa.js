@@ -42,13 +42,13 @@ ul li {
       font-weight: 600;
     }
 
-    ul {
+    .header-menu__mobile {
       display: none;
       gap: 20px;
       font-size: .75rem;
     }
 
-    i {
+    .icon-mobile {
       font-size: 1.25rem;
     }
   }
@@ -59,13 +59,39 @@ ul li {
     padding: 6px 30px;
 
     nav {
-      ul {
-        display: flex !important;
+      ul.header-menu__mobile {
+        display: flex;
       }
 
-      .menu-mobile {
+      .icon-mobile {
         display: none;
       }
     }
+  }
+}
+
+@media screen and (max-width:768px){ 
+  .header {
+   
+    .header-menu__mobile.header-menu__mobile--active {
+      position: absolute;
+      right: 0px;
+      top: 43px;
+      width: 180px;
+      background-color: @primary-color;
+      padding: 8px 16px;
+      transition: all .3s ease-in;
+      border-top: 1px solid @secondary-color;
+      li + li {
+        border-top: 1px solid @secondary-color;
+      }
+
+      li {
+        padding: 5px;
+      }
+     
+    }
+    
+   
   }
 }

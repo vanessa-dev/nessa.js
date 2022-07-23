@@ -31,22 +31,40 @@ ul li {
   font-size: 1.3rem;
   font-weight: 600;
 }
-.header nav ul {
+.header nav .header-menu__mobile {
   display: none;
   gap: 20px;
   font-size: 0.75rem;
 }
-.header nav i {
+.header nav .icon-mobile {
   font-size: 1.25rem;
 }
 @media screen and (min-width: 768px) {
   .header {
     padding: 6px 30px;
   }
-  .header nav ul {
-    display: flex !important;
+  .header nav ul.header-menu__mobile {
+    display: flex;
   }
-  .header nav .menu-mobile {
+  .header nav .icon-mobile {
     display: none;
+  }
+}
+@media screen and (max-width: 768px) {
+  .header .header-menu__mobile.header-menu__mobile--active {
+    position: absolute;
+    right: 0px;
+    top: 43px;
+    width: 180px;
+    background-color: #2740C1;
+    padding: 8px 16px;
+    transition: all 0.3s ease-in;
+    border-top: 1px solid #AFB7DE;
+  }
+  .header .header-menu__mobile.header-menu__mobile--active li + li {
+    border-top: 1px solid #AFB7DE;
+  }
+  .header .header-menu__mobile.header-menu__mobile--active li {
+    padding: 5px;
   }
 }
