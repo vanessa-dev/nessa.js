@@ -27,7 +27,7 @@ button {
 .titulo h2 {
   font-size: 1.5rem;
   font-weight: 600;
-  margin-bottom: 16px;
+  margin-bottom: 8px;
 }
 .titulo span {
   color: #2C2FB2;
@@ -185,4 +185,40 @@ button {
 /**TECNOLOGIAS**/
 .tech {
   padding: 6px 15px;
+}
+.tech .tech-used {
+  display: grid;
+  justify-content: center;
+  margin-top: 16px;
+  grid-template-columns: repeat(auto-fit, minmax(200px, max-content));
+  gap: 20px;
+}
+.tech .tech-used .tech-item {
+  background-color: #121213;
+  color: #fff;
+  font-family: 'Roboto Slab', serif;
+  display: flex;
+  align-items: center;
+  padding: 10px 12px;
+  gap: 20px;
+  position: relative;
+}
+.tech .tech-used .tech-item::before {
+  display: inline-block;
+  content: "";
+  width: 2px;
+  height: 100%;
+  background-color: #fff;
+  position: absolute;
+  top: 0;
+  left: 35%;
+}
+.tech .tech-used .tech-item i {
+  font-size: 2.5rem;
+  display: block;
+  padding-left: 6px ;
+}
+.tech .tech-used .tech-item p {
+  font-weight: 500;
+  padding-left: 45px;
 }
