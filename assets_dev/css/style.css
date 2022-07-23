@@ -75,6 +75,11 @@ button {
 .introduction {
   padding: 6px 15px;
   color: #121213;
+  display: grid;
+  grid-template-columns: 1fr;
+  align-items: center;
+  gap: 10px;
+  padding-top: 16px;
 }
 .introduction .introduction-hello {
   color: #7e7c7c;
@@ -114,4 +119,20 @@ button {
 }
 .introduction button i {
   font-size: 1.1rem;
+}
+.introduction .introduction-img img {
+  width: 100%;
+  display: none;
+}
+@media screen and (min-width: 768px) {
+  .introduction {
+    grid-template-columns: 1fr 1fr;
+    padding: 6px 30px;
+  }
+  .introduction .introduction-img img {
+    display: block;
+  }
+  .introduction button {
+    max-width: 260px;
+  }
 }
