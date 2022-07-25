@@ -88,6 +88,7 @@ button {
 /**HEADER**/
 .header {
   background-color: @primary-color;
+  margin-bottom: 16px;
   color: @light-color;
   padding: 6px 15px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
@@ -161,6 +162,7 @@ button {
 
 .introduction{
   padding: 6px 15px;
+  margin-bottom: 16px;
   color: @dark-color;
   display: grid;
   grid-template-columns: 1fr;
@@ -234,6 +236,7 @@ button {
 /**TECNOLOGIAS**/
 .tech {
   padding: 6px 15px;
+  margin-bottom: 16px;
   .tech-used {
     display:grid;
     justify-content: center;
@@ -278,5 +281,52 @@ button {
       }
       
     }
+  }
+}
+
+@media screen and (min-width:768px){ 
+  .tech {
+    padding: 6px 30px;
+  }
+}
+
+/**Projetos**/
+.projects {
+  padding: 6px 15px;
+  margin-bottom: 16px;
+  .projects-cards {
+    margin-top: 24px;
+    .projects-card__item {
+      background-color: @primary-color;
+      color: @light-color;
+      max-width: 280px;
+      margin-bottom: 12px;
+      padding: 6px 12px;
+      display: grid;
+      grid-template-columns: 1fr;
+
+      .projects-card__links  {
+        font-size: 1.2rem;
+        justify-self: end;
+        a + a {
+          margin-left: 6px;
+        }
+      }
+
+      ul {
+        display: flex;
+        justify-content: space-between;
+        font-family: 'Roboto Slab', serif;
+      }
+      p {
+        padding-top:10px ;
+        padding-bottom: 8px ;
+      }
+    }
+  }
+  .projects-mais {
+    text-align: center;
+    display: inline-block;
+    margin: 0 auto;
   }
 }
