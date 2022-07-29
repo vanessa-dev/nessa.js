@@ -296,10 +296,15 @@ button {
   margin-bottom: 16px;
   .projects-cards {
     margin-top: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
     .projects-card__item {
       background-color: @primary-color;
       color: @light-color;
-      max-width: 280px;
+      max-width: 300px;
       margin-bottom: 12px;
       padding: 6px 12px;
       display: grid;
@@ -324,9 +329,29 @@ button {
       }
     }
   }
+
   .projects-mais {
     text-align: center;
-    display: inline-block;
-    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 500;
+    text-transform: uppercase;
+    flex-direction: column;
+    &::after {
+      background-color: @secondary-color;
+      height: 4px;
+      content:"";
+      width: 40px;
+    }
+  }
+}
+
+@media screen and (min-width:768px){ 
+  .projects {
+    padding: 6px 30px;
+    .projects-cards {
+      flex-direction: row;
+    }
   }
 }
