@@ -15,6 +15,7 @@
 body {
   font-family: 'Poppins', sans-serif;
   color: @dark-color;
+  background-color: #dbdadb;
 }
 
 a {
@@ -364,16 +365,20 @@ button {
     display: grid;
     grid-template-columns: 1fr;
     margin-top: 24px;
+    gap: 20px;
     img {
-      width: 80%;
+      width: 100%;
+      max-height: 440px;
     }
 
     form {
       color: @gray-color;
       display: grid;
+      grid-template-columns: 1fr;
       gap: 30px;
      
       input, textarea {
+        background: transparent;
         display: block;
         border: none;
         border-bottom: 2px solid @gray-color;
@@ -399,12 +404,11 @@ button {
   .contact {
     padding: 6px 30px;
     .contact-container {
-      flex-direction: row;
-      grid-template-columns: 1fr 1fr;
       form {
         grid-template-columns: 1fr 1fr;
-        grid-template-rows: repeat(3, 50px);
+        grid-template-rows: repeat(3, 60px);
         align-self: end;
+       
         label:nth-of-type(5) {
           grid-column: span 2;
         }
@@ -415,3 +419,8 @@ button {
     }
   }
 }
+@media screen and (min-width:1024px){
+  .contact .contact-container {
+    grid-template-columns: 1fr 1fr;
+  }
+ }
