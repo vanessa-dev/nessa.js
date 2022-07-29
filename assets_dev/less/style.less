@@ -29,7 +29,14 @@ ul li {
 button {
   text-transform: uppercase;
 }
-
+.primary-button {
+  background-color: @primary-color;
+  color: @light-color;
+  border: none;
+  padding: 10px 16px;
+  display: flex;
+  align-items: center;
+}
 .titulo {
  
   display: inline-block;
@@ -200,15 +207,8 @@ button {
   }
 
   button {
-    background-color: @primary-color;
-    color: @light-color;
-    border: none;
     width: 100%;
-    padding: 10px 16px;
-    display: flex;
-    align-items: center;
     justify-content: space-between;
-
     i {
       font-size: 1.1rem;
     }
@@ -352,6 +352,66 @@ button {
     padding: 6px 30px;
     .projects-cards {
       flex-direction: row;
+    }
+  }
+}
+
+/**Contato**/
+.contact {
+  padding: 6px 15px;
+  margin-bottom: 16px;
+  .contact-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    margin-top: 24px;
+    img {
+      width: 80%;
+    }
+
+    form {
+      color: @gray-color;
+      display: grid;
+      gap: 30px;
+     
+      input, textarea {
+        display: block;
+        border: none;
+        border-bottom: 2px solid @gray-color;
+        width: 100%;
+        height: 25px;
+        margin-bottom: 30px;
+        &:focus {
+          outline: 0;
+          border-color: @dark-color;
+        }
+      }
+      button {
+        max-width: 180px;
+        height: 50px;
+        justify-content: center;
+      }
+      
+    }
+  }
+}
+
+@media screen and (min-width:768px){ 
+  .contact {
+    padding: 6px 30px;
+    .contact-container {
+      flex-direction: row;
+      grid-template-columns: 1fr 1fr;
+      form {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: repeat(3, 50px);
+        align-self: end;
+        label:nth-of-type(5) {
+          grid-column: span 2;
+        }
+        button {
+         align-self: start;
+        }
+      }
     }
   }
 }

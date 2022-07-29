@@ -18,6 +18,14 @@ ul li {
 button {
   text-transform: uppercase;
 }
+.primary-button {
+  background-color: #2740C1;
+  color: #fff;
+  border: none;
+  padding: 10px 16px;
+  display: flex;
+  align-items: center;
+}
 .titulo {
   display: inline-block;
   position: relative;
@@ -156,13 +164,7 @@ button {
   padding-bottom: 10px;
 }
 .introduction button {
-  background-color: #2740C1;
-  color: #fff;
-  border: none;
   width: 100%;
-  padding: 10px 16px;
-  display: flex;
-  align-items: center;
   justify-content: space-between;
 }
 .introduction button i {
@@ -294,5 +296,62 @@ button {
   }
   .projects .projects-cards {
     flex-direction: row;
+  }
+}
+/**Contato**/
+.contact {
+  padding: 6px 15px;
+  margin-bottom: 16px;
+}
+.contact .contact-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  margin-top: 24px;
+}
+.contact .contact-container img {
+  width: 80%;
+}
+.contact .contact-container form {
+  color: #7e7c7c;
+  display: grid;
+  gap: 30px;
+}
+.contact .contact-container form input,
+.contact .contact-container form textarea {
+  display: block;
+  border: none;
+  border-bottom: 2px solid #7e7c7c;
+  width: 100%;
+  height: 25px;
+  margin-bottom: 30px;
+}
+.contact .contact-container form input:focus,
+.contact .contact-container form textarea:focus {
+  outline: 0;
+  border-color: #121213;
+}
+.contact .contact-container form button {
+  max-width: 180px;
+  height: 50px;
+  justify-content: center;
+}
+@media screen and (min-width: 768px) {
+  .contact {
+    padding: 6px 30px;
+  }
+  .contact .contact-container {
+    flex-direction: row;
+    grid-template-columns: 1fr 1fr;
+  }
+  .contact .contact-container form {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(3, 50px);
+    align-self: end;
+  }
+  .contact .contact-container form label:nth-of-type(5) {
+    grid-column: span 2;
+  }
+  .contact .contact-container form button {
+    align-self: start;
   }
 }
