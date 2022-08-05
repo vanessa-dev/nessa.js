@@ -39,11 +39,11 @@ button {
   align-items: center;
 }
 .titulo {
- 
   display: inline-block;
   position: relative;
   left: 50%; 
   transform: translateX(-50%);
+  margin-bottom: 12px;
 
   h2 {
     font-size: 1.5rem;
@@ -100,6 +100,7 @@ button {
   color: @light-color;
   padding: 6px 15px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  margin-bottom: 12px;
 
   nav {
     display: flex;
@@ -115,7 +116,7 @@ button {
     .header-menu__mobile {
       display: none;
       gap: 20px;
-      font-size: .75rem;
+      font-size: 1rem;
     }
 
     .icon-mobile {
@@ -126,7 +127,8 @@ button {
 
 @media screen and (min-width:768px){ 
   .header {
-    padding: 6px 30px;
+    padding: 10px 30px;
+    margin-bottom: 24px;
 
     nav {
       ul.header-menu__mobile {
@@ -177,6 +179,7 @@ button {
   align-items: center;
   gap: 10px;
   padding-top: 16px;
+  margin-bottom: 12px;
 
   .introduction-hello {
     color: @gray-color;
@@ -224,6 +227,7 @@ button {
   .introduction {
     grid-template-columns: 1fr 1fr;
     padding: 6px 30px;
+    margin-bottom: 24px;
     .introduction-img img {
       display: block;
     }
@@ -237,12 +241,12 @@ button {
 /**TECNOLOGIAS**/
 .tech {
   padding: 6px 15px;
-  margin-bottom: 16px;
+  margin-bottom: 12px;
   .tech-used {
     display:grid;
     justify-content: center;
     margin-top: 24px;
-    grid-template-columns: repeat(auto-fit, minmax(200px, max-content));
+    grid-template-columns: 280px;
     gap:20px;
     .tech-item {
       background-color: @dark-color;
@@ -268,17 +272,18 @@ button {
 
       i {
         font-size: 2.5rem;
-        justify-content: center;
       }
 
       i, p {
         display: flex;
         align-items: center;
+        justify-content: center;
       }
 
       p {
         font-weight: 500;
         padding-left: 12px;
+        font-size: 1.4rem;
       }
       
     }
@@ -288,13 +293,24 @@ button {
 @media screen and (min-width:768px){ 
   .tech {
     padding: 6px 30px;
+    margin-bottom: 24px;
+    .tech-used {
+      grid-template-columns: 280px 280px;
+    }
+  }
+}
+@media screen and (min-width:1360px){ 
+  .tech {
+    .tech-used {
+      grid-template-columns: repeat(3, minmax(350px, max-content));
+    }
   }
 }
 
 /**Projetos**/
 .projects {
   padding: 6px 15px;
-  margin-bottom: 16px;
+  margin-bottom: 12px;
   .projects-cards {
     margin-top: 24px;
     display: flex;
@@ -351,6 +367,7 @@ button {
 @media screen and (min-width:768px){ 
   .projects {
     padding: 6px 30px;
+    margin-bottom: 24px;
     .projects-cards {
       flex-direction: row;
     }
@@ -360,7 +377,7 @@ button {
 /**Contato**/
 .contact {
   padding: 6px 15px;
-  margin-bottom: 16px;
+  margin-bottom: 12px;
   .contact-container {
     display: grid;
     grid-template-columns: 1fr;
@@ -403,6 +420,7 @@ button {
 @media screen and (min-width:768px){ 
   .contact {
     padding: 6px 30px;
+    margin-bottom: 24px;
     .contact-container {
       form {
         grid-template-columns: 1fr 1fr;
