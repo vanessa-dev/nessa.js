@@ -7,7 +7,7 @@
 body {
   font-family: 'Poppins', sans-serif;
   color: #121213;
-  background-color: #dbdadb;
+  background-color: #f6f7f9;
 }
 a {
   text-decoration: none;
@@ -360,4 +360,20 @@ button {
   .contact .contact-container {
     grid-template-columns: 1fr 1fr;
   }
+}
+/**Footer**/
+footer {
+  background-color: #121213;
+  color: #fff;
+  text-align: center;
+  padding: 4px 8px;
+}
+footer .icons {
+  margin-top: 6px;
+}
+footer .icons a {
+  font-size: 1.25rem;
+}
+footer .icons a + a {
+  margin-left: 12px;
 }
