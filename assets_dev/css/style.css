@@ -19,6 +19,7 @@ ul li {
 button {
   text-transform: uppercase;
 }
+/**UTILS**/
 .primary-button {
   background-color: #2740C1;
   color: #fff;
@@ -114,6 +115,7 @@ button {
 }
 @media screen and (max-width: 768px) {
   .header .header-menu__mobile.header-menu__mobile--active {
+    display: block;
     position: absolute;
     right: 0px;
     top: 43px;
