@@ -43,6 +43,11 @@ button {
   display: flex;
   align-items: center;
 }
+
+.primary-button:hover {
+  background-color: @detail-color;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.4);
+}
 .titulo {
   display: inline-block;
   position: relative;
@@ -121,6 +126,22 @@ button {
       display: none;
       gap: 20px;
       font-size: 1rem;
+      a {position: relative;}
+      a:after {
+        content:"";
+        display: block;
+        width: 0;
+        height: 2px;
+        margin-top: 4px;
+        background-color: #ffffff;
+        transition: 0.3s;
+        position: absolute;
+      }
+      
+      a:hover:after {
+        width: 100%;
+      }
+      
     }
 
     .icon-mobile {
@@ -333,7 +354,10 @@ button {
       display: grid;
       grid-template-columns: 1fr;
       min-height: 240px;
-
+      transition: transform 0.3s ease-in;
+      &:hover {
+        transform: scale(1.1);
+      }
       .projects-card__links  {
         font-size: 1.2rem;
         justify-self: end;
