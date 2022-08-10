@@ -12,6 +12,10 @@
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: 'Poppins', sans-serif;
   color: @dark-color;
@@ -155,6 +159,7 @@ button {
       padding: 8px 16px;
       transition: all .3s ease-in;
       border-top: 1px solid @secondary-color;
+      z-index: 2;
       li + li {
         border-top: 1px solid @secondary-color;
       }
