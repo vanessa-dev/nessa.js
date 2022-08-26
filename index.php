@@ -138,26 +138,26 @@
       </div>
       <div class="contact-container">
         <img src="assets/img/messenger.svg" alt="">
-        <form>
+        <form method="POST" action="php/send_email.php">
           <label>
            Nome *
-           <input type="text" name="nome"  required>
+           <input type="text" name="name"  required>
           </label>
           <label>
             Sobrenome
-            <input type="text" name="sobrenome"  >
+            <input type="text" name="surname"  >
            </label>
           <label>
             Email *
-            <input type="email" name="sobrenome"  required>
+            <input type="email" name="email"  required>
           </label>
           <label>
             Telefone
-            <input type="text" name="telefone"  >
+            <input type="text" name="telephone"  >
           </label>
           <label>
             Mensagem
-            <textarea></textarea>
+            <textarea name="message"></textarea>
           </label>
           <button class="primary-button" type="submit">Enviar</button>
         </form>
