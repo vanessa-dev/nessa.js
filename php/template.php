@@ -8,19 +8,19 @@ function getTemplateEmail($name, $surname, $email, $telephone, $message)
       <table style='border-color: #000000; background-color: #ffffff; float: left;' border='2px' width='100%' cellspacing='0px' cellpadding='16px'>
         <tbody>
           <tr>
-            <td style='width: 25%; font-weight: bold;'>Contato:</td>
+            <td style='width: 25%; font-weight: bold;'>Nome:</td>
             <td>$name</td>
           </tr>
           <tr>
-            <td style='width: 25%; font-weight: bold;'>E-mail:</td>
+            <td style='width: 25%; font-weight: bold;'>Sobrenome:</td>
             <td>$surname</td>
           </tr>
           <tr>
-            <td style='width: 25%; font-weight: bold;'>Telefone:</td>
+            <td style='width: 25%; font-weight: bold;'>E-mail:</td>
             <td>$email</td>
           </tr>
           <tr>
-            <td style='width: 25%; font-weight: bold;'>Ve&iacute;culo</td>
+            <td style='width: 25%; font-weight: bold;'>Telefone:</td>
             <td>$telephone</td>
           </tr>
           <tr>
