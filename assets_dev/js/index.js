@@ -29,8 +29,6 @@ function Toast (tipo, messagem) {
   }
 }
 
-console.log(Toast('danger', 'Email não enviado.'));
-
 async function sendEmail(event) {
   event.preventDefault();
   const formData = new FormData(this);
@@ -43,7 +41,7 @@ async function sendEmail(event) {
     method: "POST",
   });
   const resp = await email.json();
-  console.log(resp);
+  Toast(resp.tipo, resp.mensagem);
 }
 
 form.addEventListener('submit', sendEmail);

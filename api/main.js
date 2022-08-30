@@ -25,7 +25,7 @@ app.post("/send-email", async (req, res) => {
     }
   });
 
-  const message = {
+  const messagem_email = {
     from: username,
     to: email_destino,
     subject: "Mensagem do Website Nessa.js",
@@ -33,15 +33,15 @@ app.post("/send-email", async (req, res) => {
     html: 'teste'
   };
 
-  transport.sendMail(message, function (err) {
+  transport.sendMail(messagem_email, function (err) {
     if (err) return res.status(400).json({
-      erro: true,
+      tipo: 'danger',
       mensagem: "Erro: E-mail não enviado com sucesso!"
     });
   });
 
   return res.json({
-    erro: false,
+    tipo: 'success',
     mensagem: "E-mail enviado com sucesso!"
   });
 
