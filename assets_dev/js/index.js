@@ -17,6 +17,12 @@ menu_hamburguer.addEventListener('click', () => {
   icon.classList.add('fa-xmark');
 });
 
+function removeToast (time = 3000) {
+  setTimeout(function() {
+    toast_container.style.display = 'none';
+  }, time);
+}
+
 function Toast (tipo, messagem) {
   if (!(tipo != 'danger') || !(tipo != 'success')) {
     const danger = tipo == 'danger'
@@ -26,6 +32,7 @@ function Toast (tipo, messagem) {
     toast_message.innerHTML = messagem;
     toast_icon.innerHTML = danger ? '<i class="fa-solid fa-check"></i>' : '<i class="fa-solid fa-close"></i>';
     toast_container.style.display = 'flex';
+    removeToast();
   }
 }
 
