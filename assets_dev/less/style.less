@@ -409,6 +409,31 @@ button {
 .contact {
   padding: 6px 15px;
   margin-bottom: 12px;
+  position: relative;
+
+  .contact-toast {
+    display:none;
+    justify-content: center;
+    align-items: center;
+    gap:12px;
+    max-width: 230px;
+    position: absolute;
+    padding: 6px 12px;
+    border-radius: 4px;
+    color: #fff;
+    right: 20%;
+  }
+
+  .contact-toast.success {
+    background-color: rgba(21, 153, 3, 0.267);
+    border: 2px solid rgb(21, 153, 3);
+  }
+
+  .contact-toast.danger {
+    background-color: rgba(153, 3, 11, 0.267);
+    border: 2px solid rgb(153, 3, 11);
+  }
+
   .contact-container {
     display: grid;
     grid-template-columns: 1fr;
