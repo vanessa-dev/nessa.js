@@ -4,7 +4,8 @@
   "description": "Portfolio Desenvolvedor Web",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "node api/main.js"
   },
   "author": "Vanessa Santana",
   "license": "ISC",

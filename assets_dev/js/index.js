@@ -4,6 +4,7 @@ const form = document.getElementById('formContato');
 const toast_container =  document.querySelector('.contact-toast');
 const toast_icon =  document.querySelector('.toast-icon');
 const toast_message =  document.querySelector('.toast-message');
+const button_enviar_form = document.querySelector('.enviar-form');
 
 menu_hamburguer.addEventListener('click', () => {
   const active = menu.classList.toggle('header-menu__mobile--active');

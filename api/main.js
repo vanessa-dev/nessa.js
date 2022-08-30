@@ -29,8 +29,8 @@ app.post("/send-email", async (req, res) => {
     from: username,
     to: email_destino,
     subject: "Mensagem do Website Nessa.js",
-    text: 'O(a) ${email} te enviou uma mensagem!',
-    html: 'teste'
+    text: `O(a) ${email} te enviou uma mensagem!`,
+    html: html
   };
 
   transport.sendMail(messagem_email, function (err) {
