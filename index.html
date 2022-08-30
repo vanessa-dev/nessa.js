@@ -138,7 +138,7 @@
       </div>
       <div class="contact-container">
         <img src="assets/img/messenger.svg" alt="">
-        <form method="POST" action="php/send_email.php">
+        <form method="POST" action="php/send_email.php" id="formContato">
           <label>
            Nome *
            <input type="text" name="name"  required>
@@ -156,8 +156,8 @@
             <input type="text" name="telephone"  >
           </label>
           <label>
-            Mensagem
-            <textarea name="message"></textarea>
+            Mensagem *
+            <textarea name="message" required></textarea>
           </label>
           <button class="primary-button" type="submit">Enviar</button>
         </form>
