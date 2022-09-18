@@ -19,9 +19,15 @@ a {
 ul li {
   list-style: none;
 }
+
 button {
   text-transform: uppercase;
 }
+
+button:disabled {
+  cursor: not-allowed;
+}
+
 /**UTILS**/
 .primary-button {
   background-color: #2740C1;
@@ -359,18 +365,19 @@ button {
   gap: 12px;
   max-width: 230px;
   position: absolute;
-  padding: 6px 12px;
+  padding: 5px 10px;
+  font-size: 14px;
   border-radius: 4px;
-  color: #fff;
+  color: #757575;
   right: 20%;
+  background-color: #fff;
+  box-shadow: 0 1px 10px 0 rgba(0,0,0,.1),0 2px 15px 0 rgba(0,0,0,.05);
 }
-.contact .contact-toast.success {
-  background-color: rgba(21, 153, 3, 0.267);
-  border: 2px solid #159903;
+.contact .contact-toast.success .toast-icon {
+  color: #07bc0c;
 }
-.contact .contact-toast.danger {
-  background-color: rgba(153, 3, 11, 0.267);
-  border: 2px solid #99030b;
+.contact .contact-toast.danger .toast-icon{
+  color: #bc0707;
 }
 .contact .contact-container {
   display: grid;

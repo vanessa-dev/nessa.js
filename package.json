@@ -2,7 +2,7 @@
   "name": "nessa",
   "version": "1.0.0",
   "description": "Portfolio Desenvolvedor Web",
-  "main": "index.js",
+  "main": "./api/main.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "node api/main.js"
