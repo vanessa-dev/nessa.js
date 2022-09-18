@@ -47,7 +47,7 @@ async function sendEmail(event) {
   button_enviar_form.disabled = true;
   const formData = new FormData(this);
   const data = JSON.stringify(Object.fromEntries(formData))
-  const email = await fetch(`${BASE_URL}/send-email`, {
+  const email = await fetch(`${BASE_URL}/api/send_email`, {
     body: data,
     headers: {
       'Content-Type': 'application/json'
