@@ -5,8 +5,11 @@ const toast_container =  document.querySelector('.contact-toast');
 const toast_icon =  document.querySelector('.toast-icon');
 const toast_message =  document.querySelector('.toast-message');
 const button_enviar_form = document.querySelector('.enviar-form');
+const input_telephone = document.querySelector('input[name="telephone"]'); 
 const BASE_URL = window.location.origin; 
+
 console.log(BASE_URL);
+
 menu_hamburguer.addEventListener('click', () => {
   const active = menu.classList.toggle('header-menu__mobile--active');
   const icon  = menu_hamburguer.querySelector('i');
@@ -57,4 +60,19 @@ async function sendEmail(event) {
   Toast(resp.tipo, resp.mensagem);
 }
 
+function mask(){
+  let input = this;
+  setTimeout(function() {
+    input.value = maskTel(input.value);
+  }, 1);
+}
+
+function maskTel(v){
+  v=v.replace(/\D/g,""); //Remove tudo o que não é dígito
+  v=v.replace(/^(\d{2})(\d)/g,"($1) $2"); //Coloca parênteses em volta dos dois primeiros dígitos
+  v=v.replace(/(\d)(\d{4})$/,"$1-$2"); //Coloca hífen entre o quarto e o quinto dígitos
+  return v;
+}
+
+input_telephone.addEventListener('keyup', mask);
 form.addEventListener('submit', sendEmail);
