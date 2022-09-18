@@ -145,23 +145,23 @@
         <form method="POST" action="php/send_email.php" id="formContato">
           <label>
            Nome *
-           <input type="text" name="name"  required>
+           <input type="text" name="name" placeholder="Seu nome" required>
           </label>
           <label>
             Sobrenome
-            <input type="text" name="surname"  >
+            <input type="text" name="surname" placeholder="Seu Sobrenome"   >
            </label>
           <label>
             Email *
-            <input type="email" name="email"  required>
+            <input type="email" name="email" placeholder="teste@gmail.com" required>
           </label>
           <label>
             Telefone
-            <input type="text" name="telephone"  >
+            <input type="text" name="telephone" placeholder="(99) 99999-9999" >
           </label>
           <label>
             Mensagem *
-            <textarea name="message" required></textarea>
+            <textarea name="message" placeholder="Estamos como uma vaga aberta para Desenvolvedor JavaScript..." required></textarea>
           </label>
           <button class="primary-button enviar-form" type="submit">Enviar</button>
         </form>

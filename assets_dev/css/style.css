@@ -404,6 +404,7 @@ button:disabled {
   width: 100%;
   height: 25px;
   margin-bottom: 30px;
+  margin-top: 2px;
 }
 .contact .contact-container form input:focus,
 .contact .contact-container form textarea:focus {
