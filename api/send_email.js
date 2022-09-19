@@ -27,7 +27,7 @@ export default function handler(req, res) {
       html: html
     };
 
-    const teste = transport.sendMail(messagem_email, function (err, res) {
+    const teste = transport.sendMail(messagem_email, function (err, success) {
       if (err) {
           return res.status(400).json({
           tipo: 'danger',
@@ -35,7 +35,7 @@ export default function handler(req, res) {
         })
       };
 
-      console.log(res);
+      console.log(success);
     });
     console.log(teste);
     return res.status(200).json({
