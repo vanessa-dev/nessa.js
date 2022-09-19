@@ -34,13 +34,10 @@ export default function handler(req, res) {
           mensagem: "Erro: E-mail não enviado com sucesso!"
         })
       };
+      console.log(res);
       return res.status(200).json({
         tipo: 'success',
-        mensagem: "E-mail enviado com sucesso!",
-        name,
-        email,
-        email_destino,
-        res
+        mensagem: "E-mail enviado com sucesso!"
       });
     });
 
