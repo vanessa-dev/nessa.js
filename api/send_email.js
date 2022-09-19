@@ -36,7 +36,10 @@ export default function handler(req, res) {
 
     return res.status(200).json({
       tipo: 'success',
-      mensagem: "E-mail enviado com sucesso!"
+      mensagem: "E-mail enviado com sucesso!",
+      name,
+      email,
+      email_destino
     });
   } else {
     return res.status(403).json({
