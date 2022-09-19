@@ -30,7 +30,7 @@ export default async function handler(req, res) {
     const info = await transport.sendMail(messagem_email);
 
     return res.status(200).json(info);
-
+    console.log("teste")
    
   } else {
     return res.status(403).json({
