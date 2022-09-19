@@ -27,18 +27,20 @@ export default function handler(req, res) {
       html: html
     };
 
-    transport.sendMail(messagem_email, function (err, res) {
+    const teste = transport.sendMail(messagem_email, function (err, res) {
       if (err) {
           return res.status(400).json({
           tipo: 'danger',
           mensagem: "Erro: E-mail não enviado com sucesso!"
         })
       };
+
       console.log(res);
-      return res.status(200).json({
-        tipo: 'success',
-        mensagem: "E-mail enviado com sucesso!"
-      });
+    });
+    console.log(teste);
+    return res.status(200).json({
+      tipo: 'success',
+      mensagem: "E-mail enviado com sucesso!"
     });
 
    
