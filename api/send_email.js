@@ -5,7 +5,7 @@ const username = process.env.USERNAME;
 const password = process.env.PASSWORD;
 const email_destino = process.env.EMAIL_DESTINO;
 
-export default function handler(req, res) {
+export default async function handler(req, res) {
   if (req.method === 'POST') {
     const { name, email, surname, telephone, message } = req.body;
     const html = `Nome: ${name}</br>. Sobrenome: ${surname || 'Não definido'}</br>. Email: ${email}</br>. Telefone: ${telephone || 'Não definido'}</br>. Messagem: ${message}</br>`;
@@ -18,7 +18,7 @@ export default function handler(req, res) {
         pass: password
       }
     });
-
+  
     const messagem_email = {
       from: username,
       to: email_destino,
@@ -26,22 +26,10 @@ export default function handler(req, res) {
       text: `O(a) ${email} te enviou uma mensagem!`,
       html: html
     };
+   
+    const info = await transport.sendMail(messagem_email);
 
-    const teste = transport.sendMail(messagem_email, function (err, success) {
-      if (err) {
-          return res.status(400).json({
-          tipo: 'danger',
-          mensagem: "Erro: E-mail não enviado com sucesso!"
-        })
-      };
-
-      console.log(success);
-    });
-    console.log(teste);
-    return res.status(200).json({
-      tipo: 'success',
-      mensagem: "E-mail enviado com sucesso!"
-    });
+    return res.status(200).json(info);
 
    
   } else {
