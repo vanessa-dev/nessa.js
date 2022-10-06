@@ -342,7 +342,7 @@ button {
   background-color: #AFB7DE;
   height: 4px;
   content: "";
-  width: 40px;
+  width: 140px;
 }
 @media screen and (min-width: 768px) {
   .projects {
