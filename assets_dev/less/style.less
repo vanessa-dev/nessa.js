@@ -5,6 +5,25 @@
 @light-color:   #fff;
 @gray-color:   #4d4d4d;
 
+@font-face {
+  font-family: Poppins;
+  src: url('../../assets/fonts/Poppins/Poppins-Regular.ttf'),
+   url('../../assets/fonts/Poppins/Poppins-SemiBold.ttf'),
+   url('../../assets/fonts/Poppins/Poppins-Medium.ttf'),
+   url('../../assets/fonts/Poppins/Poppins-SemiBoldItalic.ttf'),
+   url('../../assets/fonts/Poppins/Poppins-Bold.ttf'),
+  ;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: Roboto Slab;
+  src: url('../../assets/fonts/Roboto_Slab/RobotoSlab-Medium.ttf'),
+    url('../../assets/fonts/Roboto_Slab/RobotoSlab-Regular.ttf'),
+  ;
+  font-display: swap
+}
+
 /**RESET**/
 * {
   margin: 0;
@@ -17,7 +36,7 @@ html {
 }
 
 body {
-  font-family: 'Poppins', sans-serif;
+  font-family: Poppins, sans-serif;
   color: @dark-color;
   background-color: #f6f7f9;
 }
@@ -286,7 +305,7 @@ button {
     .tech-item {
       background-color: @dark-color;
       color: @light-color;
-      font-family: 'Roboto Slab', serif;
+      font-family: Roboto Slab, serif;
       display: grid;
       grid-template-columns: 30% 70%;
       align-items: center;
