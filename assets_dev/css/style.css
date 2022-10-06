@@ -204,6 +204,7 @@ button {
 .introduction .introduction-download {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   width: 100%;
   padding: 10px 16px;
 }
@@ -257,10 +258,10 @@ button {
   top: 0;
   left: 35%;
 }
-.tech .tech-used .tech-item i {
-  font-size: 2.5rem;
+.tech .tech-used .tech-item img {
+  width: 100%;
 }
-.tech .tech-used .tech-item i,
+.tech .tech-used .tech-item img,
 .tech .tech-used .tech-item p {
   display: flex;
   align-items: center;
