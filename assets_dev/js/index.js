@@ -8,7 +8,6 @@ const button_enviar_form = document.querySelector('.enviar-form');
 const input_telephone = document.querySelector('input[name="telephone"]'); 
 const BASE_URL = window.location.origin; 
 
-console.log(BASE_URL);
 
 menu_hamburguer.addEventListener('click', () => {
   const active = menu.classList.toggle('header-menu__mobile--active');
