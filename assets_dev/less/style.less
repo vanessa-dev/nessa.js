@@ -217,7 +217,7 @@ button {
 /**INTRODUÇÃO**/
 
 .introduction{
-  padding: 6px 15px;
+  padding: 6px 30px;
   margin-bottom: 16px;
   color: @dark-color;
   display: grid;
@@ -232,28 +232,15 @@ button {
     padding-bottom: 4px;
   }
 
-  h2 {
+  h2.introduction-job {
     font-weight: 600;
-    font-size: 1.3rem;
-    position: relative;
-    display: inline-block;
-    &::after {
-      display: block;
-      background-color: @secondary-color;
-      height: 4px;
-      content:"";
-      width:100%;
-      position: absolute;
-      bottom: 20%;
-      z-index: -1;
-      white-space: nowrap;
-      padding-bottom: 4px;
-    }
+    font-size: 2rem; 
+    padding: 0.5rem 0;  
   }
 
-  .introduction-job {
-    font-size: 1rem;
-    padding-bottom: 10px;
+  .introduction-welcome {
+    color: @gray-color;
+    padding-bottom: 0.8rem;
   }
 
   button {

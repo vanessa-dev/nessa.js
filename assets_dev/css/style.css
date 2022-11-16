@@ -168,7 +168,7 @@ button {
 }
 /**INTRODUÇÃO**/
 .introduction {
-  padding: 6px 15px;
+  padding: 6px 30px;
   margin-bottom: 16px;
   color: #121213;
   display: grid;
@@ -182,27 +182,14 @@ button {
   color: #4d4d4d;
   padding-bottom: 4px;
 }
-.introduction h2 {
+.introduction h2.introduction-job {
   font-weight: 600;
-  font-size: 1.3rem;
-  position: relative;
-  display: inline-block;
+  font-size: 2rem;
+  padding: 0.5rem 0;
 }
-.introduction h2::after {
-  display: block;
-  background-color: #AFB7DE;
-  height: 4px;
-  content: "";
-  width: 100%;
-  position: absolute;
-  bottom: 20%;
-  z-index: -1;
-  white-space: nowrap;
-  padding-bottom: 4px;
-}
-.introduction .introduction-job {
-  font-size: 1rem;
-  padding-bottom: 10px;
+.introduction .introduction-welcome {
+  color: #4d4d4d;
+  padding-bottom: 0.8rem;
 }
 .introduction button {
   width: 100%;
