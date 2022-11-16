@@ -177,6 +177,7 @@ button {
   gap: 10px;
   padding-top: 16px;
   margin-bottom: 12px;
+  font-size: 0.8rem;
 }
 .introduction .introduction-hello {
   color: #4d4d4d;
@@ -184,7 +185,7 @@ button {
 }
 .introduction h2.introduction-job {
   font-weight: 600;
-  font-size: 2rem;
+  font-size: 1.3rem;
   padding: 0.5rem 0;
 }
 .introduction .introduction-welcome {
@@ -209,17 +210,21 @@ button {
   width: 100%;
   display: none;
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 769px) {
   .introduction {
     grid-template-columns: 1fr 1fr;
     padding: 6px 30px;
     margin-bottom: 24px;
+    font-size: 1.2rem;
   }
   .introduction .introduction-img img {
     display: block;
   }
   .introduction button {
     max-width: 260px;
+  }
+  .introduction h2.introduction-job {
+    font-size: 2rem;
   }
 }
 /**TECNOLOGIAS**/

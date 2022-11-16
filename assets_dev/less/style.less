@@ -226,6 +226,7 @@ button {
   gap: 10px;
   padding-top: 16px;
   margin-bottom: 12px;
+  font-size: 0.8rem;
 
   .introduction-hello {
     color: @gray-color;
@@ -234,7 +235,7 @@ button {
 
   h2.introduction-job {
     font-weight: 600;
-    font-size: 2rem; 
+    font-size: 1.3rem; 
     padding: 0.5rem 0;  
   }
 
@@ -264,17 +265,21 @@ button {
   }
 }
 
-@media screen and (min-width:768px){ 
+@media screen and (min-width:769px){ 
   .introduction {
     grid-template-columns: 1fr 1fr;
     padding: 6px 30px;
     margin-bottom: 24px;
+    font-size: 1.2rem;
     .introduction-img img {
       display: block;
     }
 
     button { 
       max-width: 260px;
+    }
+    h2.introduction-job {
+      font-size: 2rem; 
     }
   }
 }
