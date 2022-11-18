@@ -1,0 +1,22 @@
+{
+  "header": {
+    "technologies": "technologies",
+    "projects": "projects",
+    "contact": "contact"
+  },
+  "introduction": {
+    "hello": "HI! My name is Vanessa Santana 👋",
+    "description": "Web Developer full stack, with knowledge on the languages PHP and JavaScript.",
+    "welcome": "Welcome! I am Glad that you are here. If you want to know more about  my work experience, take a look at my resume.",
+    "resume": "Resume"
+  },
+  "technology": {
+    "title": ""
+  },
+  "projects":  {
+    "title": ""
+  },
+  "contact": {
+
+  }
+}
