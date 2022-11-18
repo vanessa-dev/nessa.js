@@ -11,14 +11,11 @@ const BASE_URL = window.location.origin;
 
 menu_hamburguer.addEventListener('click', () => {
   const active = menu.classList.toggle('header-menu__mobile--active');
-  const icon  = menu_hamburguer.querySelector('i');
   if (!active) {
-    icon.classList.remove('fa-xmark');
-    icon.classList.add('fa-bars');
+    menu_hamburguer.setAttribute("src", "assets/img/icons/menu.svg");
     return;
   }
-  icon.classList.remove('fa-bars');
-  icon.classList.add('fa-xmark');
+  menu_hamburguer.setAttribute("src", "assets/img/icons/close.svg");  
 });
 
 function removeToast (time = 3000) {

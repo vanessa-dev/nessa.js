@@ -1,0 +1,22 @@
+{
+  "header": {
+    "technologies": "Tecnologias",
+    "projects": "Projetos",
+    "contact": "Contato"
+  },
+  "introduction": {
+    "hello": "OI! Meu nome é Vanessa Santana 👋.",
+    "description": "Desenvolvedora Web FullStack, conhecimento nas linguagens PHP & JavaScript.",
+    "welcome": "Seja Bem-vindo! É muito bom te ter aqui, para saber mais da minha experiencia profissional de uma olhadinha no meu curriculo!",
+    "resume": "Currículo"
+  },
+  "technology": {
+    "title": ""
+  },
+  "projects":  {
+    "title": ""
+  },
+  "contact": {
+
+  }
+}
