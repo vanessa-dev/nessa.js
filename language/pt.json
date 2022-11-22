@@ -11,12 +11,33 @@
     "resume": "Currículo"
   },
   "technology": {
-    "title": ""
+    "title_1": "Tecnologias",
+    "title_2": "Usadas"
   },
   "projects":  {
-    "title": ""
+    "title_1": "Meus",
+    "title_2": "Projetos",
+    "project_description_1": "Uma aplicação Web com intuito de divulgar serviços de monitoramento de Veiculos: Moto, Carro e Caminhão",
+    "project_description_2": "Uma aplicação Web para divulgar bicicletas feitas a mão, desenvolvido para praticar os conhecimentos de flexbox, prototipo do curso da Origamid.",
+    "project_description_3": "Uma aplicação Web de gerenciamento de tarefas, e possivel filtrar por tarefas concluídas ou não."
   },
   "contact": {
-
+    "title_1": "Contate",
+    "title_2": "-me",
+    "name": {
+      "label": "Nome",
+      "placeholder": "Seu Nome"
+    },
+    "surname": {
+      "label": "Sobrenome",
+      "placeholder": "Seu Sobrenome"
+    },
+    "telephone": {
+      "label": "Telefone"
+    },
+    "message": {
+      "label": "Mensagem",
+      "placeholder": "Estamos com uma vaga aberta para desenvolvedor JavaScript"
+    }
   }
 }
