@@ -111,8 +111,8 @@ button {
   gap: 40px;
 }
 .header nav .header-flex .switch-button {
-  background: rgba(255, 255, 255, 0.56);
-  border-radius: 30px;
+  background: #AFB7DE;
+  border-radius: 10px;
   overflow: hidden;
   width: 120px;
   text-align: center;
