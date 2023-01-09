@@ -105,6 +105,74 @@ button {
   align-items: center;
   justify-content: space-between;
 }
+.header nav .header-flex {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+.header nav .header-flex .switch-button {
+  background: #AFB7DE;
+  border-radius: 10px;
+  overflow: hidden;
+  width: 120px;
+  text-align: center;
+  font-size: 18px;
+  height: 30px;
+  letter-spacing: 1px;
+  color: #2740C1;
+  padding-right: 60px;
+  position: relative;
+}
+.header nav .header-flex .switch-button:before {
+  content: "EN";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  width: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 3;
+  pointer-events: none;
+}
+.header nav .header-flex .switch-button-checkbox {
+  cursor: pointer;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  z-index: 2;
+}
+.header nav .header-flex .switch-button-checkbox:checked + .switch-button-label:before {
+  transform: translateX(60px);
+  transition: transform 300ms linear;
+}
+.header nav .header-flex .switch-button-checkbox + .switch-button-label {
+  position: relative;
+  padding: 2px 0;
+  display: block;
+  user-select: none;
+  pointer-events: none;
+}
+.header nav .header-flex .switch-button-checkbox + .switch-button-label:before {
+  content: "";
+  background: #fff;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  border-radius: 10px;
+  transform: translateX(0);
+  transition: transform 300ms;
+}
+.header nav .header-flex .switch-button-checkbox + .switch-button-label .switch-button-label-span {
+  position: relative;
+}
 .header nav h1 {
   font-style: italic;
   font-size: 1.3rem;

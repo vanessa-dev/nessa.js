@@ -11,12 +11,33 @@
     "resume": "Resume"
   },
   "technology": {
-    "title": ""
+    "title_1": "Used",
+    "title_2": "Technologies"
   },
   "projects":  {
-    "title": ""
+    "title_1": "My",
+    "title_2": "Projects",
+    "project_description_1": "A Web Application with intention to share vehicle tracking services: Motorcycle, Car and Truck.",
+    "project_description_2": "A Web Application that show the services of making bicycles. That Project was developed to pratice CSS flexbox.",
+    "project_description_3": "A Web Application of tasks management, with filter of tasks accomplished or not accomplished."
   },
   "contact": {
-
+    "title_1": "Contact",
+    "title_2": "-me",
+    "name": {
+      "label": "Name",
+      "placeholder": "Your Name"
+    },
+    "surname": {
+      "label": "Surname",
+      "placeholder": "Your Surname"
+    },
+    "telephone": {
+      "label": "Telephone"
+    },
+    "message": {
+      "label": "Message",
+      "placeholder": "We have a opening position for JavaScript Developer"
+    }
   }
 }
