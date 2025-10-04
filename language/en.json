@@ -1,8 +1,14 @@
 {
+  "metaData": {
+    "title": "Web Developer focused on JavaScript",
+    "description": "Web Developer with knowledge in HTML, CSS, LESS, JavaScript, jQuery, Bootstrap, React, PHP, CodeIgniter...",
+    "keywords": "JavaScript, jQuery, React",
+    "author": "Vanessa Santana"
+  },
   "header": {
-    "technologies": "technologies",
-    "projects": "projects",
-    "contact": "contact"
+    "technologies": "Technologies",
+    "projects": "Projects",
+    "contact": "Contact"
   },
   "introduction": {
     "hello": "HI! My name is Vanessa Santana 👋",
@@ -38,6 +44,11 @@
     "message": {
       "label": "Message",
       "placeholder": "We have a opening position for JavaScript Developer"
-    }
+    },
+    "email": {
+      "label": "Email",
+      "placeholder": "your@email.com"
+    },
+    "submit": "Send"
   }
 }

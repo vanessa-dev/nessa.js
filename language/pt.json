@@ -1,4 +1,10 @@
 {
+  "metaData": {
+    "title": "Desenvolvedor Web com foco em JavaScript",
+    "description": "Desenvolvedor Web com conhecimento nas seguintes tecnologias: HTML, CSS, LESS, JavaScript, Jquery, BootStrap, React, PHP, CodeIgniter...",
+    "keywords": "JavaScript, Jquery, React",
+    "author": "Vanessa Santana"
+  },
   "header": {
     "technologies": "Tecnologias",
     "projects": "Projetos",
@@ -38,6 +44,11 @@
     "message": {
       "label": "Mensagem",
       "placeholder": "Estamos com uma vaga aberta para desenvolvedor JavaScript"
-    }
+    },
+    "email": {
+      "label": "Email",
+      "placeholder": "teste@gmail.com"
+    },
+    "submit": "Enviar"
   }
 }
